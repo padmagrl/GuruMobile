@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Guru99 App Test automtion regression suite only login "
+	thread-count="3" parallel="tests" verbose="3">
+
+	<listeners>
+<!-- 		<listener -->
+<!-- 			class-name="com.qa.oc.Listeners.ExtentReportListener" /> -->
+<!-- 		<listener class-name="com.qa.guru.Listeners.TestAllureListener" /> -->
+
+	</listeners>
+
+	<test name="Day 1 2 3 TestCases">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.guru2.TestCases.Day01TestCaseFlow" />
+			<class name="com.qa.guru2.TestCases.Day02TestCaseFlow" />
+			<class name="com.qa.guru2.TestCases.Day03TestCaseFlow" />
+		</classes>
+	</test>
+	
+
+
+</suite>
