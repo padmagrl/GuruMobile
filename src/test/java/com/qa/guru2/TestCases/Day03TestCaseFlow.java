@@ -26,14 +26,17 @@ public class Day03TestCaseFlow extends BaseTest {
 		cp.doClickUpdate();
 		//5
 		 String act=cp.doGetErrorMsgForExtraQtyOFpRoductSony();
+		 System.out.println("actual error msg for sony "+act);
 		 String exp=ConstUtil.CHECKOUTPAGE_ERROR_SONY;
-		 Assert.assertTrue(act.contains(exp));
+		 softAssert.assertEquals(act, exp);
 		 //6
 		 cp.doClickEmptyCart();
 		 //7
 		 String actEmpty=cp.doGetEmptyCartHeader();
+		 System.out.println("actEmpty Header "+actEmpty);
 		 String expEmpty=ConstUtil.CHECKOUTPAGE_EMPTY_CART;
-		 Assert.assertTrue(actEmpty.contains(expEmpty));
+		 softAssert.assertTrue(actEmpty.contains(expEmpty));
+		 softAssert.assertAll();
 	}
 
 }

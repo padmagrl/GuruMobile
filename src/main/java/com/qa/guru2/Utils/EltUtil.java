@@ -217,12 +217,28 @@ public class EltUtil {
 		List<WebElement> li = findElts(locator);
 		for (WebElement e : li) {
 			if (e.getText().equals(value)) {
+				
 				e.click();
 				break;
 			}
 		}
 
 	}
+	public void doClickItemFromListWithFlash(By locator, String value) {
+		List<WebElement> li = findElts(locator);
+		for (WebElement e : li) {
+			if (e.getText().equals(value)) {
+				if (Boolean.parseBoolean(DriverFactory.highlight)) {
+					js.flash(e);
+					e.click();
+					break;
+				}
+				
+			}
+		}
+
+	}
+	
 
 	public void comboDropDownSelect(By locator, String... value) {
 		// findElt(ddLoc).click();
@@ -790,6 +806,22 @@ public class EltUtil {
 		}
 		
 	}
+	public void closeWindow()
+	{
+		driver.close();
+		System.out.println("Window is closed");
+	}
+	public void quitWindow()
+	{
+		driver.quit();
+		System.out.println("Window is quit");
+	}
+	public void maximizeWindow()
+	{
+		driver.manage().window().maximize();
+	}
+	
+	
 
 
 
