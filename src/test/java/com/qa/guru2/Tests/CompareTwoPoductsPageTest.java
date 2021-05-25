@@ -15,6 +15,7 @@ public class CompareTwoPoductsPageTest extends BaseTest {
 	{
 		mp.doClickAddToComapre("Sony");
 		mp.doClickAddToComapre("IPhone");
+		System.out.println("compared two phones");
 //		cpp=mp.doClickComapreButton();
 //		String header=cpp.verifyCompareTwoPoductsWindowHeader();
 //		System.out.println(header);
