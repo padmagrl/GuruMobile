@@ -10,7 +10,7 @@ public class TVProdDetailsPageTest extends BaseTest {
 	public void TvProdDetailsSetUp()
 	{
 		tp=hp.doClickTV();
-		tpdp=tp.doClickOnSpecificTVFromOneOfImgs("Samsung LCD");
+		//tpdp=tp.doClickOnSpecificTVFromOneOfImgs("Samsung LCD");
 	}
 	@Test
 	public void samsungTvProdHeaderTest()

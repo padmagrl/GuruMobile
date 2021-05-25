@@ -40,7 +40,7 @@ public class ShareWishListPageTest extends BaseTest {
 		}
 		tp=hp.doClickTV();
 		
-		tpdp=tp.doClickOnSpecificTVFromOneOfImgs("Samsung");
+		//tpdp=tp.doClickOnSpecificTVFromOneOfImgs("Samsung");
 		wlp=tpdp.clickAddToWishList("Samsung");
 		swp=wlp.clickOnShareWishListFromWishListButtonsList();
 		boolean b1=swp.doShareWishList("padmatest@gmail.com", "test");

@@ -18,7 +18,7 @@
 <!-- 			<class name="com.qa.guru2.TestCases.Day02TestCaseFlow" /> -->
 <!-- 			<class name="com.qa.guru2.TestCases.Day03TestCaseFlow" /> -->
 <!-- 			<class name="com.qa.guru2.TestCases.Day04TestCaseFlow" /> -->
-			<class name="com.qa.guru2.TestCases.Day06TestCaseFlow" />
+			<class name="com.qa.guru2.Tests.ViewOrderPageTest" />
 		</classes>
 	</test>
 	
