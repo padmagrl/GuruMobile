@@ -15,6 +15,8 @@ public class TVPage {
 	// 1
 	private By tvImgs = By.xpath("//a[@class='product-image']/img");
 	private By tvText = By.xpath("//div[@class='product-info']/h2/a");
+	private By samsungTV = By.xpath("//img[@alt='Samsung LCD']");
+	private By TVheader = By.xpath("//h1[.='TV']");
 
 	// 2
 	public TVPage(WebDriver d) {
@@ -28,15 +30,22 @@ public class TVPage {
 
 	}
 
-	public TVProdDetailsPage doClickOnSpecificTVFromOneOfImgs(String altVal) {
-		List<WebElement> li = eu.findElts(tvImgs);
+	public TVProdDetailsPage doClickOnSpecificTVFromOneOfImgs(String altVal, String srcVal) {
+		List<WebElement> li = eu.waitForVisibilityOfELtsLocatedFluent(tvImgs, 20, 5);
 		for (WebElement e : li) {
-			if (e.getAttribute("alt").contains(altVal)) {
+			if ((e.getAttribute("alt").contains(altVal)) && (!e.getAttribute("src").contains(srcVal))) {
 				e.click();
+
 				break;
 			}
 
 		}
+		return new TVProdDetailsPage(d);
+	}
+
+	public TVProdDetailsPage doClickOnSAMSUNG() {
+		System.out.println(eu.doGetText(TVheader));
+		eu.waitForELtPresent(samsungTV, 20).click();
 		return new TVProdDetailsPage(d);
 	}
 

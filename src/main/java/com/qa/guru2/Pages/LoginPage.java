@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.qa.guru2.Utils.EltUtil;
 
-public class LoginPage extends CommonPage {
+public class LoginPage {
 	// 1
 	private By username = By.name("login[username]");
 	private By password = By.name("login[password]");

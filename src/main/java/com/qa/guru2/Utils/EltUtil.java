@@ -227,7 +227,7 @@ public class EltUtil {
 	public void doClickItemFromListWithFlash(By locator, String value) {
 		List<WebElement> li = findElts(locator);
 		for (WebElement e : li) {
-			if (e.getText().equals(value)) {
+			if (e.getText().equalsIgnoreCase(value)) {
 				if (Boolean.parseBoolean(DriverFactory.highlight)) {
 					js.flash(e);
 					e.click();

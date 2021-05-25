@@ -7,16 +7,18 @@
 	<listeners>
 <!-- 		<listener -->
 <!-- 			class-name="com.qa.oc.Listeners.ExtentReportListener" /> -->
-<!-- 		<listener class-name="com.qa.guru.Listeners.TestAllureListener" /> -->
+		<listener class-name="com.qa.guru2.Listeners.TestAllureListener" /> 
 
 	</listeners>
 
-	<test name="Day 1 2 3 TestCases">
+	<test name="Day 6 TestCases">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.qa.guru2.TestCases.Day01TestCaseFlow" />
-			<class name="com.qa.guru2.TestCases.Day02TestCaseFlow" />
-			<class name="com.qa.guru2.TestCases.Day03TestCaseFlow" />
+<!-- 			<class name="com.qa.guru2.TestCases.Day01TestCaseFlow" /> -->
+<!-- 			<class name="com.qa.guru2.TestCases.Day02TestCaseFlow" /> -->
+<!-- 			<class name="com.qa.guru2.TestCases.Day03TestCaseFlow" /> -->
+<!-- 			<class name="com.qa.guru2.TestCases.Day04TestCaseFlow" /> -->
+			<class name="com.qa.guru2.TestCases.Day06TestCaseFlow" />
 		</classes>
 	</test>
 	

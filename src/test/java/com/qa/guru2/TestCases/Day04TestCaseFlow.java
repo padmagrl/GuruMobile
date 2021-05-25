@@ -20,7 +20,7 @@ public class Day04TestCaseFlow extends BaseTest {
 		mp.doClickAddToComapre("Sony");
 		mp.doClickAddToComapre("IPhone");
 		//4 Click On Compare Button
-		String header=mp.verifyCompareTwoPoductsWindowHeader();
+		String header=mp.clickCompareAndVerifyCompareWindowHeader();
 		System.out.println("header "+header);
 		
 		//5 verify pop up window and check products are reflected in it

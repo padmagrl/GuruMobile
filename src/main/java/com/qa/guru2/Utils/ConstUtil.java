@@ -29,7 +29,9 @@ public class ConstUtil {
 	public static final List<String> TVPAGE_TV_LIST= Arrays.asList("LG LCD, SAMSUNG LCD");
 	public static final String SAMSUNG_TV_HEADER="SAMSUNG LCD";
 	public static final List<String> LEFT_PANEL_LIST=Arrays.asList("ACCOUNT INFORMATION","ACCOUNT INFORMATION","ADDRESS BOOK","MY ORDERS","BILLING AGREEMENTS","RECURRING PROFILES","MY PRODUCT REVIEWS","MY WISHLIST","MY APPLICATIONS","NEWSLETTER SUBSCRIPTIONS","MY DOWNLOADABLE PRODUCTS");
-			
+	
+	//
+	public static final String SHOPPINGCARTPAGE_FLAT_RATE="Flat Rate";		
 	
 			
 			

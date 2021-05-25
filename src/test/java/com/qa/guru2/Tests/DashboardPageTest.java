@@ -16,7 +16,7 @@ public class DashboardPageTest extends BaseTest {
 	public void bashboardSetup()
 	
 	{
-		lp=hp.doClickLogInFromAccountMenu("Log In");
+		lp=hp.doClickLogInFromAccountMenu();
 		dbp=lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	@Test
@@ -31,6 +31,24 @@ public class DashboardPageTest extends BaseTest {
 		Collections.sort(actlist);
 		Collections.sort(explist);
 		Assert.assertEquals(actlist, explist);
+		
+	}
+	@Test
+	public void clickAccDashboardFromLeftPanel()
+	{
+		//dbp.clickAccDashboardFromLeftPanel();
+		System.out.println("db header "+dbp.getDashBoardHeader());
+	}
+	@Test
+	public void clickMyWishListFromLeftPanel()
+	{
+		wlp=dbp.clickMyWishlistFromLeftPanel();
+		System.out.println("db header "+wlp.getwishListHeader());
+	}
+	@Test
+	public void clickMyOrdersFromLeftPanel()
+	{
+		mop=dbp.clickMyOrdersFromLeftPanel();
 		
 	}
 

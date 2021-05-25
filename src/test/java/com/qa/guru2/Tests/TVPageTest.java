@@ -31,7 +31,7 @@ public class TVPageTest extends BaseTest {
 
 	@Test
 	public void clickOnSpecificTVTest() {
-		tp.doClickOnSpecificTVFromOneOfImgs("Samsung LCD");
+		tp.doClickOnSpecificTVFromOneOfImgs("Samsung LCD","thumbnail");
 	}
 
 }

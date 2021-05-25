@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import com.qa.guru2.Utils.EltUtil;
 
-public class HomePage extends CommonPage {
+public class HomePage {
 	private WebDriver d;
 	private EltUtil eu;
 	// 1
@@ -42,9 +42,9 @@ public class HomePage extends CommonPage {
 		eu.doClickItemFromListWithFlash(accountHoverElts, itemToClick);
 	}
 
-	public LoginPage doClickLogInFromAccountMenu(String login) {
+	public LoginPage doClickLogInFromAccountMenu() {
 		eu.doClick(accountLink);
-		eu.doClickItemFromListWithFlash(accountHoverElts, login);
+		eu.doClickItemFromListWithFlash(accountHoverElts, "Log In");
 		return new LoginPage(d);
 	}
 

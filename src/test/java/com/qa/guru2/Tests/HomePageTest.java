@@ -37,7 +37,7 @@ public class HomePageTest extends BaseTest {
 	}
 	@Test
 	public void doLoginTest()	{
-		lp=hp.doClickLogInFromAccountMenu("Log In");
+		lp=hp.doClickLogInFromAccountMenu();
 		lp.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 		
 	}
