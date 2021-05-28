@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-26T01:26:58Z" name="Default suite" finished-at="2021-05-26T01:27:26Z" duration-ms="28084">
+  <suite started-at="2021-05-28T02:09:27Z" name="Guru99 App Test automtion regression suite only login " finished-at="2021-05-28T02:09:49Z" duration-ms="22172">
     <groups>
     </groups>
-    <test started-at="2021-05-26T01:26:58Z" name="Default test" finished-at="2021-05-26T01:27:26Z" duration-ms="28084">
-      <class name="com.qa.guru2.Tests.CompareTwoPoductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:26:58Z" name="setUp" finished-at="2021-05-26T01:27:16Z" duration-ms="17871" status="PASS">
+    <test started-at="2021-05-28T02:09:27Z" name="Tv test" finished-at="2021-05-28T02:09:49Z" duration-ms="22172">
+      <class name="com.qa.guru2.Tests.TVPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:27Z" name="setUp" finished-at="2021-05-28T02:09:39Z" duration-ms="11417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="compareSetUp()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:27:16Z" name="compareSetUp" finished-at="2021-05-26T01:27:19Z" duration-ms="3236" status="PASS">
+        <test-method is-config="true" signature="TVSetup()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:39Z" name="TVSetup" finished-at="2021-05-28T02:09:42Z" duration-ms="3596" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareSetUp -->
-        <test-method signature="CompareTwoPoductsWindowTest()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:27:19Z" name="CompareTwoPoductsWindowTest" finished-at="2021-05-26T01:27:25Z" duration-ms="5684" status="PASS">
+        </test-method> <!-- TVSetup -->
+        <test-method signature="clickOnSpecificTVTest()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:42Z" name="clickOnSpecificTVTest" finished-at="2021-05-28T02:09:48Z" duration-ms="5518" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CompareTwoPoductsWindowTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:27:25Z" name="tearDown" finished-at="2021-05-26T01:27:26Z" duration-ms="973" status="PASS">
+        </test-method> <!-- clickOnSpecificTVTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:48Z" name="tearDown" finished-at="2021-05-28T02:09:49Z" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.guru2.Tests.CompareTwoPoductsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.guru2.Tests.TVPageTest -->
+    </test> <!-- Tv test -->
+  </suite> <!-- Guru99 App Test automtion regression suite only login  -->
 </testng-results>

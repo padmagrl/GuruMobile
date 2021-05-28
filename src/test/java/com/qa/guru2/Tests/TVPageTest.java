@@ -17,7 +17,7 @@ public class TVPageTest extends BaseTest {
 		tp = hp.doClickTV();
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void NamesOFListOFTVsTest() {
 		List<String> actli = tp.getNamesOFListOFTVs();
 		System.out.println(actli);

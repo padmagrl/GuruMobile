@@ -11,15 +11,15 @@
 
 	</listeners>
 
-	<test name="Day 7 TestCases">
+	<test name="Tv test">
 		<parameter name="browser" value="chrome" />
 		<classes>
 <!-- 			<class name="com.qa.guru2.TestCases.Day01TestCaseFlow" /> -->
 <!-- 			<class name="com.qa.guru2.TestCases.Day02TestCaseFlow" /> -->
 <!-- 			<class name="com.qa.guru2.TestCases.Day03TestCaseFlow" /> -->
 <!-- 			<class name="com.qa.guru2.TestCases.Day04TestCaseFlow" /> -->
-         <class name="com.qa.guru2.TestCases.Day07TestCaseFlow" />
-<!-- 			<class name="com.qa.guru2.Tests.ViewOrderPageTest" /> -->
+<!--          <class name="com.qa.guru2.TestCases.Day07TestCaseFlow" /> -->
+			<class name="com.qa.guru2.Tests.TVPageTest" /> 
 		</classes>
 	</test>
 	
