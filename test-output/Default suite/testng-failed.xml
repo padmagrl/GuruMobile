@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.guru2.TestCases.Day07TestCaseFlow">
+      <class name="com.qa.guru2.TestCases.Day01TestCaseFlow">
         <methods>
           <include name="setUp"/>
-          <include name="orderIDTest"/>
+          <include name="verifySortedByName"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.guru2.TestCases.Day07TestCaseFlow -->
+      </class> <!-- com.qa.guru2.TestCases.Day01TestCaseFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

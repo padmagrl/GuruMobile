@@ -3,8 +3,9 @@ package com.qa.guru2.Base;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.qa.guru2.Factory.DriverFactory;
 import com.qa.guru2.Pages.BillingInfoPage;
@@ -49,16 +50,18 @@ public class BaseTest {
 	public TVProdDetailsPage tpdp;
 	public ViewOrderPage vop;
 	public WishListPage wlp;
-
-	@BeforeClass
-	public void setUp() {
+	
+	@Parameters({"browser"})
+	@BeforeTest
+	public void setUp(String browserName) {
 		df = new DriverFactory();
 		prop = df.init_prop();
+		prop.setProperty("browser", browserName);
 		d = df.init_driver(prop);
 		hp = new HomePage(d);
 	}
 
-	@AfterClass
+	@AfterTest
 	public void tearDown() {
 		d.quit();
 	}

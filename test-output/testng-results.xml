@@ -1,29 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-26T01:26:58Z" name="Default suite" finished-at="2021-05-26T01:27:26Z" duration-ms="28084">
+  <suite started-at="2021-05-29T10:59:39Z" name="Guru99 App Test automtion regression suite only login " finished-at="2021-05-29T11:00:49Z" duration-ms="70150">
     <groups>
     </groups>
-    <test started-at="2021-05-26T01:26:58Z" name="Default test" finished-at="2021-05-26T01:27:26Z" duration-ms="28084">
-      <class name="com.qa.guru2.Tests.CompareTwoPoductsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:26:58Z" name="setUp" finished-at="2021-05-26T01:27:16Z" duration-ms="17871" status="PASS">
+    <test started-at="2021-05-29T10:59:39Z" name="Day 1 TestCases_chrome" finished-at="2021-05-29T11:00:42Z" duration-ms="62327">
+      <class name="com.qa.guru2.TestCases.Day01TestCaseFlow">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.guru2.TestCases.Day01TestCaseFlow@61c76850]" started-at="2021-05-29T10:59:39Z" name="setUp" finished-at="2021-05-29T11:00:15Z" duration-ms="35469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="compareSetUp()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:27:16Z" name="compareSetUp" finished-at="2021-05-26T01:27:19Z" duration-ms="3236" status="PASS">
+        <test-method signature="verifySortedByName()[pri:0, instance:com.qa.guru2.TestCases.Day01TestCaseFlow@61c76850]" started-at="2021-05-29T11:00:15Z" name="verifySortedByName" finished-at="2021-05-29T11:00:39Z" duration-ms="24528" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- compareSetUp -->
-        <test-method signature="CompareTwoPoductsWindowTest()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:27:19Z" name="CompareTwoPoductsWindowTest" finished-at="2021-05-26T01:27:25Z" duration-ms="5684" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CompareTwoPoductsWindowTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.guru2.Tests.CompareTwoPoductsPageTest@247d8ae]" started-at="2021-05-26T01:27:25Z" name="tearDown" finished-at="2021-05-26T01:27:26Z" duration-ms="973" status="PASS">
+        </test-method> <!-- verifySortedByName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.guru2.TestCases.Day01TestCaseFlow@61c76850]" started-at="2021-05-29T11:00:40Z" name="tearDown" finished-at="2021-05-29T11:00:42Z" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.guru2.Tests.CompareTwoPoductsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.guru2.TestCases.Day01TestCaseFlow -->
+    </test> <!-- Day 1 TestCases_chrome -->
+    <test started-at="2021-05-29T10:59:39Z" name="Day 1 TestCases_ff" finished-at="2021-05-29T11:00:49Z" duration-ms="70150">
+      <class name="com.qa.guru2.TestCases.Day01TestCaseFlow">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.guru2.TestCases.Day01TestCaseFlow@2df3c564]" started-at="2021-05-29T10:59:39Z" name="setUp" finished-at="2021-05-29T11:00:40Z" duration-ms="61203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifySortedByName()[pri:0, instance:com.qa.guru2.TestCases.Day01TestCaseFlow@2df3c564]" started-at="2021-05-29T11:00:40Z" name="verifySortedByName" finished-at="2021-05-29T11:00:49Z" duration-ms="8121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortedByName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.guru2.TestCases.Day01TestCaseFlow@2df3c564]" started-at="2021-05-29T11:00:49Z" name="tearDown" finished-at="2021-05-29T11:00:49Z" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.guru2.TestCases.Day01TestCaseFlow -->
+    </test> <!-- Day 1 TestCases_ff -->
+  </suite> <!-- Guru99 App Test automtion regression suite only login  -->
 </testng-results>
