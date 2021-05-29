@@ -3,13 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.qa.guru2.TestCases.Day01TestCaseFlow">
         <methods>
           <include name="setUp"/>
           <include name="verifySortedByName"/>
+=======
+      <class name="com.qa.guru2.Tests.TVPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="NamesOFListOFTVsTest"/>
+>>>>>>> 67d859641a1f7e61e5c9cbd1feb6a28425bed4d3
           <include name="tearDown"/>
+          <include name="TVSetup"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.qa.guru2.TestCases.Day01TestCaseFlow -->
+=======
+      </class> <!-- com.qa.guru2.Tests.TVPageTest -->
+>>>>>>> 67d859641a1f7e61e5c9cbd1feb6a28425bed4d3
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

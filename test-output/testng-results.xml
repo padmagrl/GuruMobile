@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -51,5 +52,33 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.guru2.TestCases.Day01TestCaseFlow -->
     </test> <!-- Day 1 TestCases_ff -->
+=======
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-28T02:09:27Z" name="Guru99 App Test automtion regression suite only login " finished-at="2021-05-28T02:09:49Z" duration-ms="22172">
+    <groups>
+    </groups>
+    <test started-at="2021-05-28T02:09:27Z" name="Tv test" finished-at="2021-05-28T02:09:49Z" duration-ms="22172">
+      <class name="com.qa.guru2.Tests.TVPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:27Z" name="setUp" finished-at="2021-05-28T02:09:39Z" duration-ms="11417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="TVSetup()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:39Z" name="TVSetup" finished-at="2021-05-28T02:09:42Z" duration-ms="3596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TVSetup -->
+        <test-method signature="clickOnSpecificTVTest()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:42Z" name="clickOnSpecificTVTest" finished-at="2021-05-28T02:09:48Z" duration-ms="5518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSpecificTVTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.guru2.Tests.TVPageTest@6a84a97d]" started-at="2021-05-28T02:09:48Z" name="tearDown" finished-at="2021-05-28T02:09:49Z" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.guru2.Tests.TVPageTest -->
+    </test> <!-- Tv test -->
+>>>>>>> 67d859641a1f7e61e5c9cbd1feb6a28425bed4d3
   </suite> <!-- Guru99 App Test automtion regression suite only login  -->
 </testng-results>
