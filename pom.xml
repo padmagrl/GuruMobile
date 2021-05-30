@@ -111,7 +111,7 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testRunners/testng_guru2_regression.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testRunners/testng_guru_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
