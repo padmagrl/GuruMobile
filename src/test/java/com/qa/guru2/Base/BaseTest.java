@@ -50,13 +50,21 @@ public class BaseTest {
 	public TVProdDetailsPage tpdp;
 	public ViewOrderPage vop;
 	public WishListPage wlp;
-	
-	@Parameters({"browser"})
+
+//	@Parameters({"browser"})
+//	@BeforeTest
+//	public void setUp(String browserName) {
+//		df = new DriverFactory();
+//		prop = df.init_prop();
+//		prop.setProperty("browser", browserName);
+//		d = df.init_driver(prop);
+//		hp = new HomePage(d);
+//	}
+
 	@BeforeTest
-	public void setUp(String browserName) {
+	public void setUp() {
 		df = new DriverFactory();
 		prop = df.init_prop();
-		prop.setProperty("browser", browserName);
 		d = df.init_driver(prop);
 		hp = new HomePage(d);
 	}

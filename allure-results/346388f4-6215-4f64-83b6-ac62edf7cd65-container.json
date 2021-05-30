@@ -1,0 +1,1 @@
+{"uuid":"346388f4-6215-4f64-83b6-ac62edf7cd65","name":"com.qa.guru2.Tests.TVPageTest","children":["d0da6d9e-ca5d-49ed-af62-f592fb29fe60"],"befores":[{"name":"TVSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1622372435632,"stop":1622372438446}],"afters":[],"links":[],"start":1622372425801,"stop":1622372441651}
