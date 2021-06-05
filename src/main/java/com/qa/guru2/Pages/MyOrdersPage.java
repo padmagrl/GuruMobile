@@ -19,6 +19,7 @@ public class MyOrdersPage {
 	private By myOrdersHeader = By.xpath("//h1[.='My Orders']");
 	private By viewOrderLinks = By.xpath("//a[.='View Order']");
 	private By viewOrderWithOrderNumberLinks = By.xpath("//td[starts-with(.,'1000')]/..//a[.='View Order']");
+	private By reOrderWithOrderNumberLinks = By.xpath("//td[starts-with(.,'1000')]/..//a[.='Reorder']");
 	private By reOrderLinks = By.xpath("//a[.='//a[.='Reorder']']");
 
 	public String getMyOrdersHeader() {
@@ -29,10 +30,19 @@ public class MyOrdersPage {
 		By xpath=By.xpath("//td[starts-with(.,'"+orderNumber+"')]/..//a[.='View Order']");
 		return xpath;
 	}
+	public By getXpathReorderWithOrderNoLinks(String orderNumber)
+	{
+		return By.xpath("//td[starts-with(.,'"+orderNumber+"')]/..//a[.='Reorder']");
+	}
 	public ViewOrderPage clickViewOderOFOrderNo(String OrderNo)
 	{
 		eu.findElt(getXpathviewOrderWithOrderNumberLinks(OrderNo)).click();
 		return new ViewOrderPage(d) ;
+	}
+	public ShoppingCartPage clickReOderOFOrderNo(String OrderNo)
+	{
+		eu.findElt(getXpathReorderWithOrderNoLinks(OrderNo)).click();
+		return new ShoppingCartPage(d) ;
 	}
 
 }

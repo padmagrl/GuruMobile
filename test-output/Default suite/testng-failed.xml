@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.guru2.Tests.TVPageTest">
+      <class name="com.qa.guru2.TestCases.Day09TestCaseFlow">
         <methods>
           <include name="setUp"/>
-          <include name="clickOnSpecificTVTest"/>
+          <include name="day9Test"/>
           <include name="tearDown"/>
-          <include name="TVSetup"/>
         </methods>
-      </class> <!-- com.qa.guru2.Tests.TVPageTest -->
+      </class> <!-- com.qa.guru2.TestCases.Day09TestCaseFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

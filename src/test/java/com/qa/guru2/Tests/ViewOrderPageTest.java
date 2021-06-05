@@ -21,6 +21,13 @@ public class ViewOrderPageTest extends BaseTest{
 		System.out.println(vop.viewOrderDetailsHeader());
 		System.out.println(vop.getOrderNoFromviewOrderDetails());
 	}
+	@Test
+	public void clickPrintOrderTest() throws InterruptedException
+	{
+		vop.clickPrintOrderLink();
+		Thread.sleep(3000);
+		
+	}
 	
 
 }

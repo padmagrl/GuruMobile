@@ -19,6 +19,8 @@ public class MobilePage {
 	private By addToCart = By.xpath("//button[@title='Add to Cart']");
 	private By addToCartOfXperia = By.xpath(
 			"//h2[contains(.,'Xperia')]//following-sibling::div[@class='actions']//button[@title='Add to Cart']");
+	private By addToCartOfIphone = By.xpath(
+			"//h2[contains(.,'phone')]//following-sibling::div[@class='actions']//button[@title='Add to Cart']");
 	private By prodImgLinks = By.xpath("//ul[@class='products-grid products-grid--max-4-col first last odd']//img");
 	private By sonYXperiaPice = By.xpath("//h2[contains(.,'Sony')]//following-sibling::div//span[@class='price']");
 	private By sonYXperiaAddToCompare = By.xpath("//a[contains(.,'Sony')]/../..//a[.='Add to Compare']");
@@ -49,7 +51,7 @@ public class MobilePage {
 
 	public By getXpathOFAddToCart(String name) {
 		By addToCart = By.xpath(
-				"//h2[contains(.,'Xperia')]//following-sibling::div[@class='actions']//button[@title='Add to Cart']");
+				"//h2[contains(.,'"+name+"')]//following-sibling::div[@class='actions']//button[@title='Add to Cart']");
 		return addToCart;
 	}
 	// *************************************
@@ -105,6 +107,10 @@ public class MobilePage {
 	public CheckOutPage doAddCartSonyXperia() {
 		eu.doClick(addToCartOfXperia);
 		return new CheckOutPage(d);
+	}
+	public ShoppingCartPage doAddCartIpone() {
+		eu.doClick(getXpathOFAddToCart("IPhone"));
+		return new ShoppingCartPage(d);
 	}
 
 	public CheckOutPage doAddCartSonyXperiaWithXpathFun(String name) {

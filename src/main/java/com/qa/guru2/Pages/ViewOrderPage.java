@@ -17,6 +17,7 @@ public class ViewOrderPage {
 	
 	
 	private By OrderIDPendingHeader=By.xpath("//h1[contains(.,'Order #')]");
+	private By printOrderLink=By.xpath("//a[.='Print Order']");
 	
 	
 	public String viewOrderDetailsHeader()
@@ -30,6 +31,14 @@ public class ViewOrderPage {
 		String or= viewOrderDetailsHeader();
 		String sub=or.substring(7,16);
 		return sub;
+	}
+	public void clickPrintOrderLink( ) throws InterruptedException
+	{
+		eu.doClick(printOrderLink);
+		Thread.sleep(5000);
+		String parent=eu.doGetParentWindowHandle();
+		eu.doSwitchChildWindow(parent);
+		System.out.println("Print page title ->"+eu.getPageTitle());
 	}
 
 }
